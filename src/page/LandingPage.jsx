@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "../assets/hanket_image.jpg";
 import Services from "../components/Service";
+import favicon from "../assets/hanket_image.ico";
 
 export default function Landing() {
   return (
     <div className="landing-container">
       {/* Header */}
       <header className="header">
+        <link rel="icon" href={favicon} />
         <div className="logo-container">
           <img src={logo} alt="Brand Logo" className="logo-img" />
           <h1 className="logo-text">HANKET STUDIO</h1>
