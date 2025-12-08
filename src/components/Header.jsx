@@ -18,7 +18,7 @@ const Header = () => {
 
         <button
           className="btn header-btn"
-          onClick={() => (window.location.href = "tel:+919876543210")}
+          onClick={() => (window.location.href = "tel:+919811306669")}
         >
           Book Now
         </button>

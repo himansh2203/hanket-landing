@@ -12,11 +12,11 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Contact</h3>
             <p>Email: info@hanketstudio.com</p>
-            <p>Phone: +91 9876543210</p>
+            <p>Phone: +91 9811306669</p>
           </div>
           <div className="footer-section">
             <h3>Follow Us</h3>
-            <p>Facebook | Instagram | Twitter</p>
+            <a href="https://www.instagram.com/hanketstudio/">Hanket </a>
           </div>
         </div>
         <p className="footer-bottom">
