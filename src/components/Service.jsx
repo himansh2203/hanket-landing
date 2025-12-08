@@ -6,7 +6,7 @@ import HassleFreeSetup from "./HassleFreeSetup";
 
 export default function Services() {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <h2 className="section-title">Our Services</h2>
       <div className="service-grid">
         <FreePhotoshoot />
