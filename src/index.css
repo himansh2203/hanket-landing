@@ -352,24 +352,133 @@ body {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  border: 2px solid transparent; /* Initial border */
+  border: 2px solid transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
 }
 
-/* Hover / Focus / Active effect with pink glow */
+/* Hover / Focus / Active effect with strong pink glow */
 .service-box:hover,
 .service-box:focus,
 .service-box:active {
   transform: scale(1.05);
-  border: 2px solid #ff3cac; /* Pink border */
-  box-shadow: 0 0 15px #ff3cac, 0 12px 20px rgba(0, 0, 0, 0.2); /* Pink glow + shadow */
+  border: 2px solid #ff3cac; /* Bright pink border */
+  box-shadow:
+    0 0 20px #ff3cac,   /* Pink glow */
+    0 0 30px #ff3cac,   /* Bigger pink glow */
+    0 12px 20px rgba(0, 0, 0, 0.2); /* Original shadow */
 }
 
 /* Mobile-specific transition */
 @media (max-width: 768px) {
   .service-box {
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+}
+
+
+.review-slider-continuous {
+  padding: 50px 20px;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #c2185b;
+  margin-bottom: 40px;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite; /* Continuous scroll */
+}
+
+.review-box {
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 300px;
+  margin: 0 15px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review-text {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review-rating .star {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.review-rating .star.filled {
+  color: #ff3cac;
+}
+
+.review-name {
+  color: #c2185b;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Half because we duplicated array */
+  }
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .review-box {
+    width: 250px;
+    margin: 0 12px;
+  }
+  .slider-title {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .review-box {
+    width: 200px;
+    margin: 0 10px;
+    padding: 15px;
+  }
+  .review-text {
+    font-size: 16px;
+  }
+  .slider-title {
+    font-size: 24px;
+  }
+}
+
+/* Extra small */
+@media (max-width: 480px) {
+  .review-box {
+    width: 180px;
+    margin: 0 8px;
+    padding: 12px;
+  }
+  .review-text {
+    font-size: 14px;
+  }
+  .slider-title {
+    font-size: 20px;
   }
 }

@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero"; // react-icons use
 import WhatsApp from "../components/WhatsApp";
 import Instagram from "../components/Instagram";
+import ReviewSlider from "../components/ReviewSlider";
 export default function Landing() {
   return (
     <>
@@ -14,10 +15,8 @@ export default function Landing() {
         <Hero />
         <Services />
         <ContactForm />
-
-        {/* Floating Social Buttons */}
+        <ReviewSlider />
         <div className="floating-social">
-          {/* WhatsApp */}
           <WhatsApp />
           <Instagram />
         </div>
