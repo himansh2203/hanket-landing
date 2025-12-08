@@ -11,8 +11,12 @@ const Header = () => {
           <img src={logo} alt="Brand Logo" className="logo-img" />
           <h1 className="logo-text">HANKET</h1>
         </div>
-        <a href="tel:+919876543210"></a>
-        <button className="btn header-btn">Book Now</button>
+        <button
+          className="btn header-btn"
+          onClick={() => (window.location.href = "tel:+919876543210")}
+        >
+          Book Now
+        </button>
       </header>
     </div>
   );
