@@ -102,7 +102,23 @@ body {
   font-weight: 600;
   color: #c2185b;
   margin-bottom: 40px;
+  /*Animation*/opacity: 0;
+  transform: translateX(100px);
+  /*Startfromright*/animation: slideRightToCenter 5s ease forwards;
+  -webkit-animation: slideRightToCenter 5s ease forwards;
 }
+
+@keyframes slideRightToCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 .service-grid {
   display: grid;
