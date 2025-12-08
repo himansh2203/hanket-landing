@@ -1,8 +1,6 @@
 /* ---------------- Global ---------------- */
 .landing-container {
   font-family: "Poppins", sans-serif;
-
-
 }
 
 /* ---------------- Header ---------------- */
@@ -206,9 +204,6 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-  .landing-container {
-    padding: 0 20px;
-  }
 
   .hero {
     flex-direction: column;
