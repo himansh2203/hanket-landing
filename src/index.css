@@ -336,3 +336,42 @@ body {
     justify-content: space-between;
   }
 }
+
+/* Grid items */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual service box */
+.service-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* Hover / Focus / Touch effect for mobile */
+.service-box:hover,
+.service-box:focus,
+.service-box:active {
+  transform: scale(1.05);
+  /*Slightlyenlarge*/box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+   /* Stronger shadow */:;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+/* Optional: Mobile-specific (for touch devices) */
+@media (max-width: 768px) {
+  .service-box {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+}
