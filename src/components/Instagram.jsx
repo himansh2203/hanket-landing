@@ -5,7 +5,7 @@ const Instagram = () => {
   return (
     <div>
       <a
-        href="https://instagram.com/yourusername" // Apna Instagram profile
+        href="https://www.instagram.com/hanketstudio/" // Apna Instagram profile
         target="_blank"
         rel="noopener noreferrer"
         className="social-btn instagram"
