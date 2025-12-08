@@ -1,0 +1,268 @@
+/* ---------------- Global ---------------- */
+.landing-container {
+  font-family: "Poppins", sans-serif;
+
+
+}
+
+/* ---------------- Header ---------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  color: #d63384;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn {
+  background: #d63384;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h2 {
+  font-size: 40px;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 90%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+/* ---------------- Services ---------------- */
+.services {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #c2185b;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #b30059;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* ---------------- Media Gallery ---------------- */
+.media-gallery {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.media-gallery img,
+.media-gallery video {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* ---------------- Contact Form ---------------- */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Button below inputs */
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form .form-btn {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.contact-form .form-btn {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+  color: #000; /* Black footer */
+  background: #ccc; /* Light gray text */
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  margin: 10px 0;
+  flex: 1; /* Equal width */
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 10px;
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Mobile */
+@media (max-width: 600px) {
+  .landing-container {
+    padding: 0 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h2 {
+    font-size: 28px;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .media-gallery img,
+  .media-gallery video {
+    max-height: 150px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .form-btn {
+    width: 95%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
