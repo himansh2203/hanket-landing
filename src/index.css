@@ -1,6 +1,9 @@
 /* ---------------- Global ---------------- */
-.landing-container {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: "Poppins", sans-serif;
+   background: linear-gradient(270deg, #ffdee9 5%, #b5fffc 150%);
 }
 
 /* ---------------- Header ---------------- */
@@ -8,7 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 25px ;
+  background-color: translucent;
 }
 
 .logo-container {
@@ -40,10 +44,14 @@
   cursor: pointer;
   font-size: 15px;
   transition: 0.3s ease-in-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* ---------------- Hero Section ---------------- */
@@ -51,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 40px ;
 }
 
 .hero-left {
@@ -84,7 +92,7 @@
 
 /* ---------------- Services ---------------- */
 .services {
-  padding: 60px 0;
+  padding: 60px ;
 }
 
 .section-title {
@@ -172,7 +180,7 @@
   background: #ccc; /* Light gray text */
   padding: 40px 20px 20px;
   margin-top: 40px;
-  width: 100%;
+  width: 97.5%;
 }
 
 .footer-container {
