@@ -26,7 +26,10 @@ const Circular = () => {
           className="rect rect1 card"
           onClick={() => scrollToSection("photoshoot-sec")}
         >
-          <img src={photo1} alt="Free Photoshoot" />
+          <img
+            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+            alt="Free Photoshoot"
+          />
           <h3>Free Photoshoot</h3>
         </div>
 
@@ -35,7 +38,10 @@ const Circular = () => {
           className="rect rect2 card"
           onClick={() => scrollToSection("brand-sec")}
         >
-          <img src={photo2} alt="Brand Identity" />
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+            alt="Brand Identity"
+          />
           <h3>Brand Identity</h3>
         </div>
 
@@ -44,7 +50,10 @@ const Circular = () => {
           className="rect rect3 card"
           onClick={() => scrollToSection("market-sec")}
         >
-          <img src={photo3} alt="Marketplace Launch" />
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4"
+            alt="Marketplace Launch"
+          />
           <h3>Marketplace Launch</h3>
         </div>
 
@@ -53,7 +62,10 @@ const Circular = () => {
           className="rect rect4 card"
           onClick={() => scrollToSection("setup-sec")}
         >
-          <img src={photo4} alt="Hassle Free Setup" />
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+            alt="Hassle Free Setup"
+          />
           <h3>Hassle Free Setup</h3>
         </div>
       </div>
