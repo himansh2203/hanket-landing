@@ -727,7 +727,6 @@ body {
 
 /* MAIN WRAPPER */
 .collage-wrapper {
- /* warm beige like reference */
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -780,7 +779,7 @@ body {
   height: 460px;
 }
 
-/* RIGHT VERTICAL */
+/* RIGHT VERTICAL RECT */
 .rect2 {
   grid-column: 5 / span 2;
   grid-row: 2;
@@ -801,19 +800,27 @@ body {
   height: 320px;
 }
 
-/* RESPONSIVE (Mobile) */
+
+/* ============================
+      MOBILE FIX (Same Layout)
+   ============================ */
 @media (max-width: 700px) {
   .collage-container {
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+    transform: scale(0.85);   /* Shrink whole layout but keep same positions */
+    transform-origin: top center;
   }
 
   .circle-image {
-    grid-column: 1 / span 2;
-    justify-self: center;
+    width: 120px;
+    height: 120px;
+    border-width: 4px;
   }
 
-  .rect1, .rect2, .rect3, .rect4 {
-    grid-column: 1 / span 2;
-    height: 200px;
-  }
+  .rect1 { height: 300px; }
+  .rect2 { height: 180px; }
+  .rect3 { height: 200px; }
+  .rect4 { height: 200px; }
 }
