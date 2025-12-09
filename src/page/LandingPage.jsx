@@ -7,12 +7,14 @@ import Hero from "../components/Hero"; // react-icons use
 import WhatsApp from "../components/WhatsApp";
 import Instagram from "../components/Instagram";
 import ReviewSlider from "../components/ReviewSlider";
+import AdsBloock from "../components/AdsBlock";
 export default function Landing() {
   return (
     <>
       <div className="landing-container">
         <Header />
         <Hero />
+        <AdsBloock />
         <Services />
         <ContactForm />
         <ReviewSlider />

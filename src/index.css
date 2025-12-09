@@ -495,3 +495,79 @@ body {
     font-size: 20px;
   }
 }
+
+/* Main container */
+.ads-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* Title styling */
+.ads-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #c2185b;
+  margin-bottom: 25px;
+}
+
+/* Video wrapper */
+.insta-video-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  background: #000;
+}
+
+/* Instagram iframe  */
+.insta-video {
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+/* ------------------- Responsive Media Queries ------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .ads-title {
+    font-size: 28px;
+  }
+
+  .insta-video {
+    height: 520px;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .ads-title {
+    font-size: 26px;
+  }
+
+  .insta-video-wrapper {
+    max-width: 360px;
+  }
+
+  .insta-video {
+    height: 480px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .ads-title {
+    font-size: 22px;
+  }
+
+  .insta-video-wrapper {
+    max-width: 300px;
+    border-radius: 15px;
+  }
+
+  .insta-video {
+    height: 420px;
+  }
+}
