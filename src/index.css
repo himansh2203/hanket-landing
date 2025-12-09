@@ -827,8 +827,9 @@ body {
 /* RIGHT VERTICAL RECT */
 .rect2 {
   grid-column: 5 / span 2;
-  grid-row: 2;
-  height: 260px;
+  grid-row: 1;
+  height: 460px;
+
 }
 
 /* BOTTOM LEFT */
@@ -845,18 +846,159 @@ body {
   height: 320px;
 }
 
+/* ============================
+      COLLAGE LAYOUT CSS
+   ============================ */
+
+/* MAIN WRAPPER */
+.collage-wrapper {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* GRID LAYOUT */
+.collage-container {
+  width: 90%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 18px;
+  position: relative;
+}
+
+/* CIRCLE IMAGE */
+.circle-image {
+  grid-column: 4 / span 2;
+  grid-row: 1;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-self: center;
+  z-index: 10;
+  border: 6px solid #e8d7c7;
+}
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RECTANGLE CARDS */
+.rect {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.rect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.rect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.rect h3 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* LARGE LEFT RECT */
+.rect1 {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  height: 460px;
+}
+
+/* RIGHT VERTICAL RECT */
+.rect2 {
+  grid-column: 5 / span 2;
+  grid-row: 1;
+  height: 460px;
+}
+
+/* BOTTOM LEFT */
+.rect3 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  height: 320px;
+}
+
+/* BOTTOM RIGHT */
+.rect4 {
+  grid-column: 4 / span 3;
+  grid-row: 3;
+  height: 320px;
+}
 
 /* ============================
-      MOBILE FIX (Same Layout)
+      MOBILE/TABLET FIX
    ============================ */
-@media (max-width: 700px) {
+
+/* Scale down layout while keeping design intact */
+@media (max-width: 1024px) {
   .collage-container {
-    width: 100%;
-    max-width: 100%;
-    gap: 10px;
-    transform: scale(0.85);   /* Shrink whole layout but keep same positions */
+    width: 95%;
+    max-width: 800px;
+    gap: 12px;
+    transform: scale(1);
     transform-origin: top center;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+  .circle-image {
+    width: 140px;
+    height: 140px;
+    border-width: 5px;
   }
+
+  .rect1 {
+    height: 390px;
+  }
+
+  .rect2 {
+    height: 390px;
+  }
+
+  .rect3 {
+    height: 270px;
+  }
+
+  .rect4 {
+    height: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collage-container {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
 
   .circle-image {
     width: 120px;
@@ -864,8 +1006,51 @@ body {
     border-width: 4px;
   }
 
-  .rect1 { height: 300px; }
-  .rect2 { height: 180px; }
-  .rect3 { height: 200px; }
-  .rect4 { height: 200px; }
+  .rect1 {
+    height: 320px;
+  }
+
+  .rect2 {
+    height: 320px;
+  }
+
+  .rect3 {
+    height: 220px;
+  }
+
+  .rect4 {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collage-container {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+  .circle-image {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+  }
+
+  .rect1 {
+    height: 240px;
+  }
+
+  .rect2 {
+    height: 240px;
+  }
+
+  .rect3 {
+    height: 160px;
+  }
+
+  .rect4 {
+    height: 160px;
+  }
 }
