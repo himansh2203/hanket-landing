@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MarketplaceLaunch() {
   return (
-    <div className="service-card">
+    <div className="service-card" id="market-sec">
       <h3>Marketplace Launch & Sales Support</h3>
       <p>Launch & scale across Amazon, Flipkart, Meesho.</p>
 

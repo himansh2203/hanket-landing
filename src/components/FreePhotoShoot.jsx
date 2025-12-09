@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FreePhotoshoot() {
   return (
-    <div className="service-card">
+    <div className="service-card" id="photoshoot-sec">
       <h3>Free Product Photoshoot</h3>
       <p>Get premium product images at zero cost.</p>
 

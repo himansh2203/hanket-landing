@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HassleFreeSetup() {
   return (
-    <div className="service-card">
+    <div className="service-card" id="setup-sec">
       <h3>Hassle-Free Brand Setup</h3>
       <p>We manage everything from start to finish.</p>
 

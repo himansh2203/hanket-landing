@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BrandIdentity() {
   return (
-    <div className="service-card">
+    <div className="service-card" id="brand-sec">
       <h3>Brand Identity & Catalog Design</h3>
       <p>Logo, branding & catalog that define your brand.</p>
 

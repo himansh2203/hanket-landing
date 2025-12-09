@@ -1,65 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
 import img1 from "../assets/hanket_image.jpg";
-
-import FreePhotoshoot from "./FreePhotoShoot";
-import BrandIdentity from "./BrandIdentity";
-import MarketplaceLaunch from "./MarketPlaceLaunch";
 import HassleFreeSetup from "./HassleFreeSetup";
+import MarketplaceLaunch from "./MarketPlaceLaunch";
+import BrandIdentity from "./BrandIdentity";
+import FreePhotoshoot from "./FreePhotoShoot";
 
 const Circular = () => {
-  const [activeComp, setActiveComp] = useState(null);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="collage-wrapper">
       <div className="collage-container">
         {/* Circle Image */}
         <div className="circle-image">
-          <img src={img1} alt="circle" />
+          <img src={img1} alt="center" />
         </div>
 
-        {/* Rect 1 */}
+        {/* RECT 1 → scroll to FreePhotoshoot */}
         <div
           className="rect rect1"
-          onClick={() => setActiveComp("photoshoot")}
-          style={{ cursor: "pointer" }}
+          onClick={() => scrollToSection("photoshoot-sec")}
         >
           <FreePhotoshoot />
         </div>
 
-        {/* Rect 2 */}
+        {/* RECT 2 → scroll to Brand Identity */}
         <div
           className="rect rect2"
-          onClick={() => setActiveComp("brand")}
-          style={{ cursor: "pointer" }}
+          onClick={() => scrollToSection("brand-sec")}
         >
           <BrandIdentity />
         </div>
 
-        {/* Rect 3 */}
+        {/* RECT 3 → scroll to Marketplace Launch */}
         <div
           className="rect rect3"
-          onClick={() => setActiveComp("market")}
-          style={{ cursor: "pointer" }}
+          onClick={() => scrollToSection("market-sec")}
         >
           <MarketplaceLaunch />
         </div>
 
-        {/* Rect 4 */}
+        {/* RECT 4 → scroll to Hassle Free Setup */}
         <div
           className="rect rect4"
-          onClick={() => setActiveComp("setup")}
-          style={{ cursor: "pointer" }}
+          onClick={() => scrollToSection("setup-sec")}
         >
           <HassleFreeSetup />
         </div>
-      </div>
-
-      {/* ===================== SHOW COMPONENT BELOW ==================== */}
-      <div className="selected-component">
-        {activeComp === "photoshoot" && <FreePhotoshoot />}
-        {activeComp === "brand" && <BrandIdentity />}
-        {activeComp === "market" && <MarketplaceLaunch />}
-        {activeComp === "setup" && <HassleFreeSetup />}
       </div>
     </section>
   );
