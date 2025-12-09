@@ -717,7 +717,7 @@ body {
 /* Extra small screens */
 @media (max-width: 420px) {
   .footer {
-    padding: 40px 15px 15px;
+    padding: 20px 5px 5px;
   }
 
   .footer-section h3 {
