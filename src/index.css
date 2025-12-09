@@ -26,6 +26,51 @@ body {
   background: rgba(255, 255, 255, 0.5); /* Slightly stronger on hover */
 }
 
+/* MOBILE VIEW FIX */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 12px;        /* Reduce padding for mobile */
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .logo {
+    max-width: 120px;         /* Prevent logo from going out */
+  }
+
+  .nav-icons { 
+    display: flex;
+    align-items: center;
+    gap: 10px;                /* Space between icons */
+  }
+
+  .book-now-btn {
+    padding: 8px 14px;        /* Smaller button */
+    font-size: 14px;
+  }
+}
+
+/* EXTRA SMALL DEVICES (like 360px, 320px) */
+@media (max-width: 450px) {
+  .header {
+    padding: 12px 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .book-now-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .nav-icons {
+    gap: 8px;
+  }
+}
+
+
 
 .logo-container {
   display: flex;
