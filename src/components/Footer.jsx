@@ -24,7 +24,7 @@ const Footer = () => {
           <h3>Contact</h3>
           <p>
             <FaEnvelope className="icon" />
-            <a href="mailto:info@hanketstudio.com"> info@hanketstudio.com</a>
+            <a href="mailto:hanketstudio@gmail.com"> hanketstudio@gmail.com</a>
           </p>
 
           <p>

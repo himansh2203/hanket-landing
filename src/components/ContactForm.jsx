@@ -9,7 +9,7 @@ const ContactForm = () => {
       </p>
       <form
         className="contact-form"
-        action="https://formsubmit.co/333himansusingh@gmail.com"
+        action="https://formsubmit.co/hanketstudio@gmail.com"
         method="POST"
       >
         {/* Important hidden inputs */}
