@@ -628,10 +628,10 @@ body {
 .footer {
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(12px);
-  padding: 50px 20px 20px;
+  padding: 5px 20px 2px;
   border-radius: 40px 40px 0 0;
   box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+
 }
 
 /* Layout */
@@ -639,7 +639,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
 .footer-section {
@@ -650,7 +649,6 @@ body {
 .footer-section h3 {
   color: #c2185b;
   font-size: 20px;
-  margin-bottom: 15px;
 }
 
 .footer-section p,
@@ -659,7 +657,6 @@ body {
   color: #333;
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
 
@@ -679,7 +676,6 @@ body {
   font-size: 16px;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .social-icon {
@@ -696,7 +692,6 @@ body {
 /* Bottom text */
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
   color: #444;
   font-size: 14px;
 }
