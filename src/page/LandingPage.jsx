@@ -8,6 +8,7 @@ import WhatsApp from "../components/WhatsApp";
 import Instagram from "../components/Instagram";
 import ReviewSlider from "../components/ReviewSlider";
 import AdsBloock from "../components/AdsBlock";
+import Circular from "../components/Circular";
 export default function Landing() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Landing() {
         <Header />
         <Hero />
         <AdsBloock />
+        <Circular />
         <Services />
         <ContactForm />
         <ReviewSlider />
