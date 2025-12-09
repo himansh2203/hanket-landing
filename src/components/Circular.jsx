@@ -1,9 +1,5 @@
 import React from "react";
 import img1 from "../assets/hanket_image.jpg";
-import photo1 from "../assets/hanket_image.jpg";
-import photo2 from "../assets/hanket_image.jpg";
-import photo3 from "../assets/hanket_image.jpg";
-import photo4 from "../assets/hanket_image.jpg";
 
 const Circular = () => {
   const scrollToSection = (id) => {
