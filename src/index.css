@@ -571,3 +571,56 @@ body {
     height: 420px;
   }
 }
+.ads-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #c2185b;
+  margin-bottom: 30px;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideDown 1s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .ads-title {
+    font-size: 28px;
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  .ads-title {
+    font-size: 26px;
+  }
+}
+
+/* Medium Phones */
+@media (max-width: 576px) {
+  .ads-title {
+    font-size: 24px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 420px) {
+  .ads-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
