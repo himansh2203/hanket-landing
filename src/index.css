@@ -8,12 +8,24 @@ body {
 
 /* ---------------- Header ---------------- */
 .header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px ;
-  background-color: translucent;
+  padding: 25px  1px 0px 0px;
+ background: rgba(255, 255, 255, 0.3); /* Translucent white */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  z-index: 1000; /* Stay on top */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional subtle border */
+  transition: background 0.3s ease;
 }
+
+.header:hover {
+  background: rgba(255, 255, 255, 0.5); /* Slightly stronger on hover */
+}
+
 
 .logo-container {
   display: flex;
