@@ -5,7 +5,7 @@ const WhatsApp = () => {
   return (
     <div>
       <a
-        href="https://wa.me/919811306669" // Apna WhatsApp number
+        href="https://wa.me/919711155417" // Apna WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="social-btn whatsapp"

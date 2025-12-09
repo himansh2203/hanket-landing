@@ -15,7 +15,7 @@ const Footer = () => {
           <h3>Hanket Studio</h3>
           <p>
             <FaMapMarkerAlt className="icon" />
-            123 Studio Street, City, State 123456
+            wz-56 Sharbati complex Jwaha Heri 110056
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
 
           <p>
             <FaPhoneAlt className="icon" />
-            <a href="tel:+919811306669"> +91 98113 06669</a>
+            <a href="tel:+9197111 55417"> +91 97111 55417</a>
           </p>
         </div>
 
