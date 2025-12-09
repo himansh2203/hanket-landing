@@ -13,9 +13,9 @@ const Circular = () => {
     <section className="collage-wrapper">
       <div className="collage-container">
         {/* Circle Image */}
-        <div className="circle-image">
+        {/* <div className="circle-image">
           <img src={img1} alt="center" />
-        </div>
+        </div> */}
 
         {/* RECT 1 → Free Photoshoot */}
         <div
