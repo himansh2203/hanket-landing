@@ -1130,3 +1130,78 @@ body {
     margin: 20px auto;   /* Adjusted margin */
   }
 }
+
+/* Base line */
+.line {
+  display: block;
+  background: linear-gradient(90deg, rgba(0,0,0,0.12), rgba(0,0,0,0.18));
+  /* fallback solid */
+  background-color: rgba(0,0,0,0.12);
+  transition: all 200ms ease;
+  margin: 30px auto;
+}
+
+/* Full-width horizontal (default) */
+.line.full {
+  width: 90%;           /* leaves small side padding */
+  height: 2px;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
+}
+
+/* Short centered horizontal */
+.line.short {
+  width: 180px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #c2185b, #6a1b9a);
+  margin: 24px auto;
+  box-shadow: 0 6px 20px rgba(198,33,91,0.08);
+}
+
+/* Vertical */
+.line.vertical {
+  width: 2px;
+  height: 120px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.18));
+  margin: 0 16px;
+}
+
+/* Thin variant (if you want to quickly reduce thickness) */
+.line.thin { height: 1px; }
+
+/* Accent hover/active effect (if placed inside an interactive area) */
+.line:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+/* ---------------- Responsive breakpoints ---------------- */
+
+/* Large tablets */
+@media (max-width: 992px) {
+  .line.full { width: 92%; height: 2px; margin: 26px auto; }
+  .line.short { width: 160px; height: 3px; margin: 22px auto; }
+  .line.vertical { height: 100px; }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .line.full { width: 94%; margin: 22px auto; }
+  .line.short { width: 140px; }
+  .line.vertical { height: 84px; margin: 0 12px; }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .line.full { width: 96%; margin: 18px auto; height: 1.5px; }
+  .line.short { width: 120px; height: 2px; margin: 16px auto; }
+  .line.vertical { height: 68px; margin: 0 8px; }
+}
+
+/* Tiny phones */
+@media (max-width: 360px) {
+  .line.short { width: 100px; }
+  .line.full { width: 98%; }
+}

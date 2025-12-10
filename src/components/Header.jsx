@@ -13,7 +13,7 @@ const Header = () => {
           style={{ cursor: "pointer" }} // cursor pointer to indicate clickable
         >
           <img src={logo} alt="Brand Logo" className="logo-img" />
-          <h1 className="logo-text">HANKET</h1>
+          <h1 className="logo-text ">HANKET</h1>
         </div>
 
         <button
