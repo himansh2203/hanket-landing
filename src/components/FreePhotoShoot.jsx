@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../assets/img1.jpeg";
 import img2 from "../assets/img 2.jpeg";
+import vid1 from "../assets/vid1.mp4";
 
 export default function FreePhotoshoot() {
   return (
@@ -12,11 +13,8 @@ export default function FreePhotoshoot() {
       <div className="media-gallery">
         <img src={img1} alt="Sample 1" />
         <img src={img2} alt="Sample 2" />
-        <video controls width="100%">
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
+        <video width="100%" autoPlay muted loop>
+          <source src={vid1} type="video/mp4" />
         </video>
       </div>
     </div>

@@ -1,4 +1,7 @@
 import React from "react";
+import marketVid from "../assets/marketVid1.mp4";
+import market1 from "../assets/market1.jpeg";
+import vid2 from "../assets/vid4.mp4";
 
 export default function MarketplaceLaunch() {
   return (
@@ -7,15 +10,12 @@ export default function MarketplaceLaunch() {
       <p>Launch & scale across Amazon, Flipkart, Meesho.</p>
 
       <div className="media-gallery">
-        <img
-          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4"
-          alt="Sample 1"
-        />
-        <video controls width="100%">
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
+        <img src={market1} alt="Sample 1" />
+        <video width="100%" autoPlay muted loop>
+          <source src={marketVid} type="video/mp4" />
+        </video>
+        <video width="100%" autoPlay muted loop>
+          <source src={vid2} type="video/mp4" />
         </video>
       </div>
     </div>

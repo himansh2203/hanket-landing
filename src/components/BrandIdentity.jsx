@@ -1,6 +1,8 @@
 import React from "react";
 import img4 from "../assets/img4.jpeg";
 import vid4 from "../assets/vid4.mp4";
+import brandvid from "../assets/brandvid1.mp4";
+import brandImg from "../assets/brand1.jpeg";
 
 export default function BrandIdentity() {
   return (
@@ -10,14 +12,12 @@ export default function BrandIdentity() {
 
       <div className="media-gallery">
         <img src={img4} alt="Sample 1" />
-        <video controls width="100%">
+        <img src={brandImg} alt="Sample 1" />
+        {/* <video controls width="100%">
           <source src={vid4} />
-        </video>
-        <video controls width="100%">
-          <source
-            src="https://www.w3schools.com/html/movie.mp4"
-            type="video/mp4"
-          />
+        </video> */}
+        <video width="100%" autoPlay muted loop>
+          <source src={brandvid} type="video/mp4" />
         </video>
       </div>
     </div>
