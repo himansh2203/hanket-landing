@@ -1054,3 +1054,79 @@ body {
     height: 160px;
   }
 }
+/* ------------------- COMING SOON VIDEO WRAPPER ------------------- */
+
+.comingsoon {
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto;   /* Added margin */
+
+  text-align: center;
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+
+  /* Fade + Slide Animation */
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* Video element */
+.comingsoon video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Animation Keyframe */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------- RESPONSIVE MEDIA QUERIES ------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .comingsoon {
+    max-width: 400px;
+    margin: 35px auto;   /* Reduced margin for tablets */
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  .comingsoon {
+    max-width: 360px;
+    border-radius: 18px;
+    margin: 30px auto;   /* Adjusted margin */
+  }
+}
+
+/* Medium Phones */
+@media (max-width: 576px) {
+  .comingsoon {
+    max-width: 320px;
+    border-radius: 16px;
+    margin: 25px auto;   /* Adjusted margin */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 420px) {
+  .comingsoon {
+    max-width: 290px;
+    border-radius: 14px;
+    margin: 20px auto;   /* Adjusted margin */
+  }
+}

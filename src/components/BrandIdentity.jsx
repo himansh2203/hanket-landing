@@ -1,5 +1,6 @@
 import React from "react";
 import img4 from "../assets/img4.jpeg";
+import vid4 from "../assets/vid4.mp4";
 
 export default function BrandIdentity() {
   return (
@@ -9,10 +10,9 @@ export default function BrandIdentity() {
 
       <div className="media-gallery">
         <img src={img4} alt="Sample 1" />
-        <img
-          src="https://images.unsplash.com/photo-1532614338840-ab30cf10ed8b"
-          alt="Sample 2"
-        />
+        <video controls width="100%">
+          <source src={vid4} />
+        </video>
         <video controls width="100%">
           <source
             src="https://www.w3schools.com/html/movie.mp4"
