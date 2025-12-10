@@ -1,4 +1,6 @@
 import React from "react";
+import img1 from "../assets/img1.jpeg";
+import img2 from "../assets/img 2.jpeg";
 
 export default function FreePhotoshoot() {
   return (
@@ -8,14 +10,8 @@ export default function FreePhotoshoot() {
 
       {/* Example images/videos */}
       <div className="media-gallery">
-        <img
-          src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
-          alt="Sample 1"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d"
-          alt="Sample 2"
-        />
+        <img src={img1} alt="Sample 1" />
+        <img src={img2} alt="Sample 2" />
         <video controls width="100%">
           <source
             src="https://www.w3schools.com/html/mov_bbb.mp4"

@@ -1,5 +1,7 @@
 import React from "react";
-import img1 from "../assets/hanket_image.jpg";
+import img from "../assets/hanket_image.jpg";
+import img4 from "../assets/img4.jpeg";
+import img1 from "../assets/img1.jpeg";
 
 const Circular = () => {
   const scrollToSection = (id) => {
@@ -22,10 +24,7 @@ const Circular = () => {
           className="rect rect1 card"
           onClick={() => scrollToSection("photoshoot-sec")}
         >
-          <img
-            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
-            alt="Free Photoshoot"
-          />
+          <img src={img1} alt="Free Photoshoot" />
           <h3>Free Photoshoot</h3>
         </div>
 
@@ -34,10 +33,7 @@ const Circular = () => {
           className="rect rect2 card"
           onClick={() => scrollToSection("brand-sec")}
         >
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-            alt="Brand Identity"
-          />
+          <img src={img4} alt="Brand Identity" />
           <h3>Brand Identity</h3>
         </div>
 

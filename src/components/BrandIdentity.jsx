@@ -1,4 +1,5 @@
 import React from "react";
+import img4 from "../assets/img4.jpeg";
 
 export default function BrandIdentity() {
   return (
@@ -7,10 +8,7 @@ export default function BrandIdentity() {
       <p>Logo, branding & catalog that define your brand.</p>
 
       <div className="media-gallery">
-        <img
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-          alt="Sample 1"
-        />
+        <img src={img4} alt="Sample 1" />
         <img
           src="https://images.unsplash.com/photo-1532614338840-ab30cf10ed8b"
           alt="Sample 2"
