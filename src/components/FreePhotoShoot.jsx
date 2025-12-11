@@ -9,7 +9,7 @@ export default function FreePhotoshoot() {
   const handleUnmute = () => {
     if (videoRef.current) {
       videoRef.current.muted = false;
-      videoRef.current.play();
+      videoRef.current.play().catch((err) => console.log("Play blocked:", err));
     }
   };
 
@@ -22,10 +22,21 @@ export default function FreePhotoshoot() {
         <img src={img1} alt="Sample 1" />
         <img src={img2} alt="Sample 2" />
 
+        {/* VIDEO FIXED */}
         <div style={{ position: "relative", marginTop: "10px" }}>
-          <video ref={videoRef} width="100%" autoPlay muted loop>
+          <video
+            ref={videoRef}
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ display: "block" }}
+          >
             <source src={vid1} type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
+
           <button
             onClick={handleUnmute}
             style={{

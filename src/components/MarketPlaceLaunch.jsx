@@ -7,10 +7,10 @@ export default function MarketplaceLaunch() {
   const videoRef1 = useRef();
   const videoRef2 = useRef();
 
-  const handleUnmute = (videoRef) => {
-    if (videoRef.current) {
-      videoRef.current.muted = false;
-      videoRef.current.play();
+  const handleUnmute = (ref) => {
+    if (ref.current) {
+      ref.current.muted = false;
+      ref.current.play().catch((e) => console.log("Play blocked:", e));
     }
   };
 
@@ -22,10 +22,21 @@ export default function MarketplaceLaunch() {
       <div className="media-gallery">
         <img src={market1} alt="Sample 1" />
 
-        <div style={{ position: "relative" }}>
-          <video ref={videoRef1} width="100%" autoPlay muted loop>
+        {/* VIDEO 1 */}
+        <div style={{ position: "relative", marginTop: "10px" }}>
+          <video
+            ref={videoRef1}
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ display: "block" }}
+          >
             <source src={marketVid} type="video/mp4" />
+            Your browser does not support video.
           </video>
+
           <button
             onClick={() => handleUnmute(videoRef1)}
             style={{
@@ -44,10 +55,21 @@ export default function MarketplaceLaunch() {
           </button>
         </div>
 
+        {/* VIDEO 2 */}
         <div style={{ position: "relative", marginTop: "10px" }}>
-          <video ref={videoRef2} width="100%" autoPlay muted loop>
+          <video
+            ref={videoRef2}
+            width="100%"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ display: "block" }}
+          >
             <source src={vid2} type="video/mp4" />
+            Your browser does not support video.
           </video>
+
           <button
             onClick={() => handleUnmute(videoRef2)}
             style={{

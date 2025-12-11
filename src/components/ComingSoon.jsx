@@ -7,15 +7,28 @@ const ComingSoon = () => {
   const handleUnmute = () => {
     if (videoRef.current) {
       videoRef.current.muted = false;
-      videoRef.current.play();
+      videoRef.current.play().catch((err) => {
+        console.log("Play error:", err);
+      });
     }
   };
 
   return (
-    <div className="comingsoon" style={{ position: "relative" }}>
-      <video ref={videoRef} autoPlay muted loop width="100%">
+    <div className="comingsoon" style={{ position: "relative", width: "100%" }}>
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        width="100%"
+        style={{ display: "block" }}
+        playsInline // Important for mobile Safari
+      >
         <source src={vid2} type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
+
+      {/* Optional Unmute Button */}
       <button
         onClick={handleUnmute}
         style={{
